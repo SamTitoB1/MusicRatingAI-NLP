@@ -1,0 +1,13 @@
+
+Goals for this project:
+
+1. Pull Lyrics from API
+2. Analyze lyrics with an NLP
+3. Rate the lyrics on sentiment
+
+1. Provide song for analysis through a track deconstructor
+2. Pull Tempo
+3. Pull BPM
+4. Pull Key and determine if major or minor
+
+1. Simple equation to determine if song is generally chill or hype
