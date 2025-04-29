@@ -2,7 +2,7 @@
 
 from lyrics_api import get_lyrics, analyze_lyrics_with_bert
 from audio_analysis import analyze_audio, analyze_audio_for_key_and_mode
-from radiohost import generate_radio_intro
+from radiohost import generate_radio_intro_ollama
 
 def sentiment_rating(sentiment_label):
     if (sentiment_label in ["positive", "very positive"]):
@@ -94,7 +94,8 @@ def main():
     #Rating function.
     
     print("\nGenerating radio intro...")
-    radio_intro = generate_radio_intro(artist, title, lyrics, sentiment_label, tempo_bpm, key)
+    radio_intro = generate_radio_intro_ollama(artist, title, lyrics, sentiment_label, tempo_bpm, key)
+    print(radio_intro)
 
 if __name__ == "__main__":
     main()
